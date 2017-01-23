@@ -53,6 +53,10 @@ public String pigLatin(String sWord)
 	{
 		return sWord + "quay";
 	}
+	if(findFirstVowel(sWord) == i)
+	{
+		return 
+	}
 	else
 	{
 		return "ERROR!";
