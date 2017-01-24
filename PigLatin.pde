@@ -1,4 +1,7 @@
 import java.util.*;
+String r = new String();
+String p = new String();
+String q = new String();
 
 public void setup() {
 	String lines[] = loadStrings("words.txt");
@@ -53,9 +56,11 @@ public String pigLatin(String sWord)
 	{
 		return sWord + "quay";
 	}
-	if(findFirstVowel(sWord) == i)
+	if(findFirstVowel(sWord) > 0)
 	{
-		return 
+		p = sWord.substring(0,findFirstVowel(sWord));
+		q = sWord.substring(findFirstVowel(sWord),sWord.length());
+		return q + p + "ay";
 	}
 	else
 	{
